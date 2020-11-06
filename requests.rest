@@ -1,0 +1,27 @@
+GET http://localhost:7071/api/products/ HTTP/1.1
+
+###
+POST http://localhost:7071/api/products/ HTTP/1.1
+content-type: application/json
+
+{
+  "name": "iPhone 12",
+  "price": "3000",
+  "new": true
+}
+
+###
+GET http://localhost:7071/api/products/5f81ae19fb164845b07bc31e HTTP/1.1
+
+###
+PUT http://localhost:7071/api/products/5f81ae19fb164845b07bc31e HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Xiaomi Mi A3",
+  "price": "700",
+  "new": false
+}
+
+###
+DELETE http://localhost:7071/api/products/5fa56f098e0adfd082afd920 HTTP/1.1
